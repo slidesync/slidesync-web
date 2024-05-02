@@ -12,7 +12,7 @@ import notify from "../assets/tap.wav";
 import firstSlide from "../assets/arrow-end-left-icon.svg";
 import lastSlide from "../assets/arrow-end-right-icon.svg";
 
-const Coontrols = forwardRef((props, ref) => {
+const Controls = forwardRef((props, ref) => {
   const [range, setRange] = useState(0);
   let { dark, state } = useContext(Context);
   let { showexit } = useContext(AppContext);
@@ -177,4 +177,4 @@ const Coontrols = forwardRef((props, ref) => {
   );
 });
 
-export default Coontrols;
+export default Controls;

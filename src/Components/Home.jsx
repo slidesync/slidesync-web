@@ -8,7 +8,7 @@ import React, {
 import { useNavigate } from "react-router-dom";
 import Time from "./Time";
 import Nav from "./Nav";
-import Coontrols from "./Coontrols";
+import Controls from "./Controls";
 import Settings from "./Settings";
 import { Context } from "../App";
 import Confirmation from "./Confirmation";
@@ -118,7 +118,7 @@ export default function Home({ socket }) {
         >
           <Nav disconnectSocket={disconnectSocket} />
           <Time />
-          <Coontrols handleControl={handleControl} ref={myRef} />
+          <Controls handleControl={handleControl} ref={myRef} />
           <p
             style={{ marginTop: "-70px" }}
             className="text-center text-[var(--text)]"
